@@ -10,4 +10,4 @@ version          "1.0.10"
   depends cb
 end
 
-depends "runit", "<= 0.16.2"
+depends "runit", ">= 1.0.0"
