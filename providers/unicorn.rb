@@ -22,6 +22,8 @@ include Chef::Mixin::LanguageIncludeRecipe
 
 action :before_compile do
 
+  include_recipe "runit"
+
   if new_resource.bundler.nil?
     new_resource.bundler rails_resource && rails_resource.bundler
   end
